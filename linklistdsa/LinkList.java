@@ -17,4 +17,24 @@ public class LinkList {
         tail = newNode;
         this.length = 1;
     }
+
+    public void printList(){
+        Node tmp = head;
+        while(tmp != null){
+            System.out.println(tmp.value);
+            tmp = tmp.next;
+        }
+    }
+
+    public void getHead(){
+        System.out.println("Head : " + this.head.value);
+    }
+
+    public void getTail(){
+        System.out.println("Tail: " + this.tail.value);
+    }
+
+    public void getLength(){
+        System.out.println("Length: " + this.length);
+    }
 }
