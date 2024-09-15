@@ -37,4 +37,15 @@ public class LinkList {
     public void getLength(){
         System.out.println("Length: " + this.length);
     }
+
+    public void appends(int value){
+        Node newNode = new Node(value);
+        if(length == 0){
+            head = newNode;
+            tail = newNode;
+        }else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
 }
