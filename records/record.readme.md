@@ -11,3 +11,7 @@
 - In many applications (e.g., e-commerce, customer databases), you may need to represent an address. An address typically contains fields such as street, city, state, and postal code, and it's not expected to change after being created (i.e., it’s immutable). Additionally, you often don't need complex behaviors for an address beyond storing and retrieving its data.
 - A Person might consist of immutable data like name, age, and an Address. Once a person’s details are captured, they don't usually need to change frequently.
 
+# Note
+- Instance varable cannot declare in record
+- Record is immutable
+
