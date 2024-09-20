@@ -48,4 +48,9 @@ public class LinkList {
             tail = newNode;
         }
     }
+
+    //Remove Last node, we have 2 cases
+    // 1. remove when have many items: We will remove it then return the list back
+
+
 }
