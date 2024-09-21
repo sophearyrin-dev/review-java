@@ -52,5 +52,28 @@ public class LinkList {
     //Remove Last node, we have 2 cases
     // 1. remove when have many items: We will remove it then return the list back
 
+    public Node removeLast(){
+        if(length ==0) return null;
+        //if(head == null || tail == null) return null;
+
+        Node temp = head;
+        Node pre = head;
+
+        while(temp.next != null){
+            pre = temp;
+            temp = temp.next;
+        }
+        tail = pre;
+        tail.next = null;
+        length--;
+        if(length == 0){
+            head = null;
+            tail = null;
+        }
+
+        return temp;
+
+    }
+
 
 }

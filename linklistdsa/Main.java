@@ -5,6 +5,15 @@ public class Main {
         // linkList.getTail();
         // linkList.getLength();
         linkList.appends(2);
+        linkList.appends(3);
+
+        linkList.removeLast();
+        linkList.removeLast();
+        linkList.removeLast();
+
         linkList.printList();
+
+
+
     }
 }
