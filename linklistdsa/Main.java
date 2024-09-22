@@ -7,10 +7,12 @@ public class Main {
         linkList.appends(2);
         linkList.appends(3);
 
-        linkList.removeLast();
-        linkList.removeLast();
-        linkList.removeLast();
+        //linkList.removeLast();
+        // linkList.removeLast();
+        // linkList.removeLast();
 
+        linkList.prepend(0);
+  
         linkList.printList();
 
 

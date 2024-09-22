@@ -75,5 +75,18 @@ public class LinkList {
 
     }
 
+    //prepend node
+    public void prepend(int value){
+        Node newNode = new Node(value);
+
+        if(head == null || length == 0){
+            head = newNode;
+            tail = newNode;
+        }
+        newNode.next = head;
+        head = newNode;
+        length++;
+    }
+
 
 }
