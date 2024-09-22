@@ -88,5 +88,23 @@ public class LinkList {
         length++;
     }
 
+    //Remove First
+    public Node RemoveFirst(){
+        Node tmp = head;
+
+        if(head == null || length == 0){
+            return null;
+        }
+
+        head = head.next;
+        tmp.next = null;
+        length--;
+        if(length ==0){
+            tail = null;
+        }
+
+        return tmp;
+    }
+
 
 }

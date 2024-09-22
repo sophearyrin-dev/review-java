@@ -12,8 +12,11 @@ public class Main {
         // linkList.removeLast();
 
         linkList.prepend(0);
+
+        linkList.RemoveFirst();
   
         linkList.printList();
+
 
 
 
