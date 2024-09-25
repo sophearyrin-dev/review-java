@@ -106,5 +106,40 @@ public class LinkList {
         return tmp;
     }
 
+    //Get a node at particular index
+    // public Node getNode(int index){
+    
+    //     if(head == null || length ==0 || index<0 || index>length){
+    //         return null;
+    //     }
+    //     Node tmp = head;
+    //     int count = -1;
+    //     if(length == 1){
+    //         return head;
+    //     }
+    //     while(tmp.next !=null){
+    //         count++;
+    //         if(count == index) return tmp;
+    //         tmp = tmp.next;
+    //     }
+
+    //     return tmp;
+    // }
+
+    public Node getNode(int index){
+    
+        if(head == null || length ==0 || index<0 || index>length){
+            return null;
+        }
+        Node tmp = head;
+        
+        for(int i=0; i<index;i++){
+            tmp = tmp.next;
+        }
+
+        return tmp;
+    }
+
+
 
 }

@@ -11,11 +11,15 @@ public class Main {
         // linkList.removeLast();
         // linkList.removeLast();
 
-        linkList.prepend(0);
+        //linkList.prepend(0);
 
-        linkList.RemoveFirst();
+        //linkList.RemoveFirst();
+
+        System.out.println("get node by index " + linkList.getNode(1).value + "\n");
   
         linkList.printList();
+
+
 
 
 
