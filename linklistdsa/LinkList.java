@@ -140,6 +140,15 @@ public class LinkList {
         return tmp;
     }
 
+    public boolean setNode(int index, int value){
+        Node tmp = getNode(index);
+        if(tmp != null){
+            tmp.value = value;
+            return true;
+        }
+        return false;
+    }
+
 
 
 }
