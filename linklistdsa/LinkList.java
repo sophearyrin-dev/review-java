@@ -149,6 +149,22 @@ public class LinkList {
         return false;
     }
 
+    public boolean insert(int index, int value){
+        if(index <0 || index >10) return false;
+        if(index ==0) {
+            prepend(value);
+            return true;
+        }
+        if(index == length) {
+            appends(value);
+            return true;
+        }
+
+        Node newNode = new Node(value);
+        Node tmp = getNode(index -1);
+        return false;
+    }
+
 
 
 }
