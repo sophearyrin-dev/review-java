@@ -1,0 +1,12 @@
+- we use stream to perform operation on collections like filtering, mapping, reducing, ..
+- Stream pipe line consist of 2 parts:
+    - Intermediate operations: 
+        - filter(): Filters elements based on a condition.
+        - map(): Transforms elements.
+        - sorted(): Sorts elements.
+        - distinct(): Removes duplicates.
+    - Terminal operation:
+        - collect(): Gathers elements into a collection.
+        - forEach(): Applies an action to each element.
+        - reduce(): Aggregates elements to produce a single value (e.g., sum, product).
+        - count(): Counts the number of elements in the stream.
