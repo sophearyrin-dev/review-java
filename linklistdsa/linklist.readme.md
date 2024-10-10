@@ -1,1 +1,2 @@
 remove node
+insert node
