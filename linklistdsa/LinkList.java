@@ -150,7 +150,7 @@ public class LinkList {
     }
 
     public boolean insert(int index, int value){
-        if(index <0 || index >10) return false;
+        if(index <0 || index >length) return false;
         if(index ==0) {
             prepend(value);
             return true;
@@ -162,7 +162,10 @@ public class LinkList {
 
         Node newNode = new Node(value);
         Node tmp = getNode(index -1);
-        return false;
+        newNode.next = tmp.next;
+        tmp.next = newNode;
+        length++;
+        return true;
     }
 
 

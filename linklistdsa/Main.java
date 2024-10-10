@@ -15,9 +15,10 @@ public class Main {
 
         //linkList.RemoveFirst();
 
-        System.out.println("get node by index " + linkList.getNode(1).value + "\n");
-        linkList.setNode(0, 10);
-  
+        //System.out.println("get node by index " + linkList.getNode(1).value + "\n");
+        // linkList.setNode(0, 10);
+        // linkList.insert(0, 30);
+        // linkList.insert(3, 40);
         linkList.printList();
 
 
