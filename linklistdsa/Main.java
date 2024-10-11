@@ -19,7 +19,11 @@ public class Main {
         // linkList.setNode(0, 10);
         // linkList.insert(0, 30);
         // linkList.insert(3, 40);
+
+        //remove
+        linkList.remove(1);
         linkList.printList();
+
 
 
 
