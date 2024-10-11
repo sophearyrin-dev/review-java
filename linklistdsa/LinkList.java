@@ -170,6 +170,21 @@ public class LinkList {
 
     //remove
 
+    public Node remove(int index){
+
+        if(index<0 || index >= length) return null;
+        
+        if(index ==0) return RemoveFirst();
+        if(index == length - 1) return removeLast();
+
+        Node prev = getNode(index - 1);
+        Node tmp = prev.next;
+        prev.next = tmp.next;
+        tmp.next = null;
+        length--;
+        return tmp;
+    }
+
 
 
 }
