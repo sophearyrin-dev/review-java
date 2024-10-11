@@ -168,6 +168,8 @@ public class LinkList {
         return true;
     }
 
+    //remove
+
 
 
 }
