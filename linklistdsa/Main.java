@@ -21,7 +21,8 @@ public class Main {
         // linkList.insert(3, 40);
 
         //remove
-        linkList.remove(1);
+        //linkList.remove(1);
+        linkList.reverse();
         linkList.printList();
 
 

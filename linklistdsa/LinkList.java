@@ -185,6 +185,27 @@ public class LinkList {
         return tmp;
     }
 
+    //reverse
+
+    public void reverse(){
+        Node tmp = head;
+        head = tail;
+        tail = tmp;
+
+        Node after = tmp.next;
+        Node before = null;
+
+        for(int i=0; i<length ;i++){
+            after = tmp.next;
+            tmp.next = before;
+            before = tmp;
+            tmp = after;
+
+        }
+
+
+    }
+
 
 
 }
