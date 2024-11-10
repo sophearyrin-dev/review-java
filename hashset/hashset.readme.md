@@ -1,0 +1,4 @@
+- store unique value
+- not quarantee any sorting order
+- can store null value
+- add(value): add value to the list and return true if the value does not exist. otherwise return false if the value already exist in the list.
