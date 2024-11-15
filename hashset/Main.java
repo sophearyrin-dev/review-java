@@ -2,10 +2,10 @@ package hashset;
 
 public class Main {
     public static void main(String[] args) {
-       //indexOf - substring
-       String a = "Hi, Hello World";
-       String b = "Hello";
+       //substring - keepstring
+       String a = "Hello World";
 
-       System.out.println(a.indexOf(b));
+       //substring(startIndex, endIndex+1);
+       System.out.println(a.substring(6,11));
     }
 }
