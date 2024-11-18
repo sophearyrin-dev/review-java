@@ -10,6 +10,8 @@ public class Main {
 
        //carry
        int b = 8, c = 7;
+       System.out.println("Result =" + (b+c)%10);
        System.out.println("Carry= " + (b+c)/10);
+       
     }
 }
