@@ -1,6 +1,7 @@
 package array;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -38,5 +39,10 @@ public class arrayTest {
 
         // Print the unique lists
         System.out.println(listOfUniqueLists);
+
+        //3. add list of list
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(Arrays.asList(1, 2, 3));// [[1,2,3]]
+        result.add(Arrays.asList(3, 4, 5));// [[1,2,3],[3,4,5]]
     }
 }
