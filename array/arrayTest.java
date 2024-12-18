@@ -44,5 +44,11 @@ public class arrayTest {
         List<List<Integer>> result = new ArrayList<>();
         result.add(Arrays.asList(1, 2, 3));// [[1,2,3]]
         result.add(Arrays.asList(3, 4, 5));// [[1,2,3],[3,4,5]]
+
+
+        char c = 'z';
+
+        System.out.println(Character.isLetter(c));
+
     }
 }
