@@ -46,9 +46,11 @@ public class arrayTest {
         result.add(Arrays.asList(3, 4, 5));// [[1,2,3],[3,4,5]]
 
 
-        char c = 'z';
+        char c = '0';
+        System.out.println(Character.isLetter(c)); //a-z, A-Z -false
 
-        System.out.println(Character.isLetter(c));
+        char a = '0';
+        System.out.println(Character.isLetterOrDigit(a)); //a-Z, A-Z, 0-9 - true
 
     }
 }
