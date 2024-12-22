@@ -52,5 +52,37 @@ public class arrayTest {
         char a = '0';
         System.out.println(Character.isLetterOrDigit(a)); //a-Z, A-Z, 0-9 - true
 
+        //2D Array
+        //int matrix[][] = new int[2][3];//2 rows, 3 coloumns
+
+        //row1
+        // matrix[0][0] = 1;
+        // matrix[0][1] = 2;
+        // matrix[0][2] = 3;
+
+        // //row2
+        // matrix[1][0] = 4;
+        // matrix[1][1] = 5;
+        // matrix[1][2] = 6;
+
+        //or we can use
+        // dataType[][] arrayName = {
+        //     {value1, value2, value3},
+        //     {value4, value5, value6},
+        //     {value7, value8, value9}
+        // };
+
+       int matrix[][]= {
+            {1,2,3},
+            {4,5,6}
+        };
+
+        for(int i=0; i<matrix[0].length; i++){//row
+            for(int j=0; j<matrix[1].length;j++){//col
+                System.out.print(matrix[i][j]);
+            }
+            System.out.println();
+        }
+
     }
 }
