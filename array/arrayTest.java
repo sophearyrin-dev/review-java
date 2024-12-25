@@ -2,6 +2,7 @@ package array;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -102,6 +103,16 @@ public class arrayTest {
         }
 
         System.out.println(result3);
+
+        //Collection.sort() & Arrays.sort()
+        List<String> listFruits = Arrays.asList("banana", "apple", "cherry");
+        Collections.sort(listFruits);
+    
+        System.out.println(listFruits); // Output: [apple, banana, cherry]
+
+        String[] array = {"banana", "apple", "cherry"};
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array)); // Output: [apple, banana, cherry]
 
 
     }
