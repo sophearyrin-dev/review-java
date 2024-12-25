@@ -77,12 +77,32 @@ public class arrayTest {
             {4,5,6}
         };
 
-        for(int i=0; i<matrix[0].length; i++){//row
-            for(int j=0; j<matrix[1].length;j++){//col
+        for(int i=0; i<matrix.length; i++){//row
+            for(int j=0; j<matrix[0].length;j++){//col
                 System.out.print(matrix[i][j]);
             }
             System.out.println();
         }
+
+        //addAll()
+
+        //addAll()
+
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+        list1.add(2);
+
+        List<Integer> list2 = new ArrayList<>();
+
+
+        boolean result3 = list1.addAll(list2);
+
+        for(int n: list1){
+            System.out.println(n);
+        }
+
+        System.out.println(result3);
+
 
     }
 }
